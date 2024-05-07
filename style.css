@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+font-family: 'poppins' system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+margin:0 10px;
+background-image: url(food.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+
+
+}
+header{
+ display:flex;
+height: 40px;
+margin: 5px;
+justify-content: center;
+
+
+}
+header img{
+    margin-top: 20px;
+}
+
+ header ul{
+display: flex;
+margin: 20px;
+ }
+
+ header li{
+    list-style-type: none;
+
+ }
+ header a{
+    text-decoration: none;
+    color: #ab0000;
+    font-size: small;
+  margin-right: 10px;
+  border-bottom: #fff;
+  
+ }
+
+ header a :active{
+    color: #fff;
+    cursor: pointer;
+ }
+
+
+
+ .showcase h2{
+     font-size: 60px;
+ }
+ 
+.main-sec{
+    height: 70vh;
+    background-image:  url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color: #ab0000;
+
+}
+.main-sec::before{
+   content: ''; 
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.1);
+}
+.main-sec h2{
+    background-color: #0000005d;
+    width: 300px;
+    border-radius: 20px;
+}
+
+
+.about-sec{
+    max-height: fit-content;
+    background-color: #ab0000;
+    text-align: center;
+    padding: 10% 20% 10% 20%;
+    color: #fff;
+    
+}
+.about-sec h2{
+    padding-bottom: 5%;
+}
+
+#boxes{
+ max-height: fit-content;
+  }
+  
+  #boxes .box{
+    float:left;
+    text-align: center;
+    width:25%;
+    padding:10px;
+  }
+  
+  #boxes .box img{
+width: 100%;
+height:100%;
+border: 1px solid #ab0000;
+border-radius: 5px;
+
+  }
+
+ #boxes .box img:hover{
+    width: 200%;
+    height: 200%;
+    position: relative;
+    align-self: center;
+    
+  }
+
+.donate-sec{
+width: 100%;
+height: 300px;
+ background-color: #ab0000;
+display: flex;
+
+}
+.dSidebar1 {
+width: 60%;
+padding: 40px;
+text-align: center;
+top: 50%;
+}
+
+
+.dSidebar1 span{
+   color:white;
+   background-color: #353131;
+   
+}
+.dSidebar1 img{
+background-color: white;
+height: 100px;
+width: 100px;
+border-radius: 50%;
+}
+.dSidebar2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.donateButtons{
+    display: grid;
+}
+
+.donateButtons button{
+padding: 5px;
+margin: 5px;
+background-color: #ab0000;
+ color: white;
+border:none;
+border-bottom: 2px solid #fff;
+}
+.donateButtons button:hover{
+    background-color: #fff;
+    color: #ab0000;
+    border: none;
+     transition-duration: 0.7s;
+}
+.card-box{
+    display: flex;
+    width: 60vw;
+}
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h2{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+
+}
+.panel.active{
+    flex: 5;
+}
+.panel.active h2{
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+@media(max-width: 480px){
+    .card-box{
+        width:100vw;
+}
+.panel:nth-of-type(4),
+.panel:nth-of-type(5)
+{
+    display: none;
+}
+}
+.sidebar2{
+    float: right;
+    height: 100%;
+    width: 35%;
+
+    background-color: #191919;
+    opacity:17%;
+}
+.ourwork-sec{
+    max-height: fit-content;
+    background-color: #fff;
+}
+/*our work section*/
+
+.ourwork-sec{
+ text-align: center;
+ height: 90vh;
+margin-bottom: 40px;
+background:none;
+color: #fff;
+justify-content: center;
+} 
+ .heading h2{
+   padding: 20px;
+
+}
+#work p{
+    margin-bottom: 20px;
+}
+
+#slideshow {
+    overflow: hidden;
+    height: 300px;
+    width: 80%;
+    margin: 0 auto;
+    font-family: Helvetica, sans-serif;
+   
+  
+    text-align: center;
+  }
+  #slideshow img{
+      height:300px;
+     width: 750px;
+     padding-right: 2px;
+       
+  }
+  .slide-wrapper {
+    width: 2912px;
+    -webkit-animation: slide 18s infinite;
+  }
+  
+  .slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+  }
+  
+
+  
+  .slide-number {
+    color: #000;
+    text-align: center;
+    font-size: 10em;
+  }
+  
+  @-webkit-keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -728px;}
+    50% {margin-left: -728px;}
+    60% {margin-left: -1456px;}
+    70% {margin-left: -1456px;}
+    80% {margin-left: -2184px;}
+    90% {margin-left: -2184px;}
+  }
+.main-footer{
+  max-height: fit-content;
+    background-color: #353131;
+    padding: 10%;
+    text-align: center;
+  
+
+}
+.container{
+  
+    margin-top: 10%;
+    box-shadow: 0 0 20px 0 rgba(243, 8, 8, 0.7);
+}
+.main-footer h2{
+    margin: 15px;
+    color: #fff;
+}
+
+    
+.main-footer form{
+    display: grid;
+    justify-content: center;
+}
+
+
+.main-footer form input[type=text], input[type=email]{
+width: 200px;
+padding: 5px;
+margin: 5px; 
+background: none;
+border: 1px solid #ab0000;
+border-radius: 5px; 
+color: #fff;
+}
+.main-footer textarea{
+width: 200px;
+margin: 5px;
+height: 50px;
+background: none;
+border: 1px solid #ab0000;
+border-radius: 5px;
+color: #fff;
+
+}
+.main-footer button{
+    width: 200px;
+    margin: 5px;
+    padding: 5px;
+    color: #fff;
+    background-color: #ab0000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+
+}
+
+.main-footer button:hover{
+    background-color: #fff;
+    color: #ab0000;
+    border: none;
+    border-radius: 5px;
+    transition: 0.7m;
+}
+footer{
+    max-height: fit-content;
+    text-align: center;
+    background-color: #ab0000;
+    padding: 50px;
+    
+}
+footer p{
+    padding: 15px;
+    color:#fff;
+}
+.quote{
+    font-size:x-large;
+}
+
+.copyrights{
+    font-size: smaller;
+}
+@media screen and (max-width:450px) {
+    .ourwork-sec{
+    height: fit-content;
+    }
+
+.header{
+    justify-content: center; 
+    
+}
+
+.main-sec h2{
+   margin-left: 40px;
+}
+
+}
